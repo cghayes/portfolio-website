@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3a399b66.chunk.css",
+    "main.js": "./static/js/main.a042f69c.chunk.js",
+    "main.js.map": "./static/js/main.a042f69c.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e22c4a31.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e22c4a31.js.map",
+    "static/js/2.c12ce6d1.chunk.js": "./static/js/2.c12ce6d1.chunk.js",
+    "static/js/2.c12ce6d1.chunk.js.map": "./static/js/2.c12ce6d1.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.3a399b66.chunk.css.map": "./static/css/main.3a399b66.chunk.css.map",
+    "static/js/2.c12ce6d1.chunk.js.LICENSE.txt": "./static/js/2.c12ce6d1.chunk.js.LICENSE.txt",
+    "static/media/biking.edd85d34.jpg": "./static/media/biking.edd85d34.jpg",
+    "static/media/disc-golf.f817ef51.jpg": "./static/media/disc-golf.f817ef51.jpg",
+    "static/media/shrike.4beee926.jpg": "./static/media/shrike.4beee926.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e22c4a31.js",
+    "static/js/2.c12ce6d1.chunk.js",
+    "static/css/main.3a399b66.chunk.css",
+    "static/js/main.a042f69c.chunk.js"
+  ]
+}

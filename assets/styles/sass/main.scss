@@ -1,0 +1,23 @@
+// custom variables
+$container-max-widths: (
+  xs: 275px,
+  sm: 300px,
+  md: 420px,
+  lg: 470px,
+  xl: 640px,
+  xxl: 900px
+);
+
+$font-size-base:              1rem;
+
+$h1-font-size:                $font-size-base * 5;
+$h2-font-size:                $font-size-base * 3;
+$h3-font-size:                $font-size-base * 2.5;
+$h4-font-size:                $font-size-base * 2;
+$h5-font-size:                $font-size-base * 1.5;
+$h6-font-size:                $font-size-base * 1.2;
+
+
+
+// import bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap';
