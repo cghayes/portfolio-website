@@ -24,7 +24,7 @@ class Header extends HTMLElement {
             <div class="collapse navbar-collapse col-md-9" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#projects" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Work</a>
+                  <a class="nav-link" aria-current="page" href="#projects">Work</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About</a>
@@ -55,7 +55,7 @@ class Footer extends HTMLElement {
           <div class="row">
             <div class="col-12 footer-col">
               <p><span class="copyright">Handmade by me &#169; 2021</span></p>
-              <p>Built with&nbsp;&nbsp;<i class="fab fa-bootstrap fa-lg"></i><span>&nbsp;Bootstrap</span></p>
+              <p>Built with&nbsp;&nbsp;<i class="fab fa-bootstrap"></i><span>&nbsp;Bootstrap</span></p>
             </div>
           </div>
         </section>
