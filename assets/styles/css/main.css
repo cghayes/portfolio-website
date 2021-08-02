@@ -50,7 +50,7 @@ body {
 }
 
 section {
-  margin: 25% 0%;
+  padding: 15% 0%;
 }
 
 a {
@@ -67,7 +67,7 @@ p {
 
 i {
   font-style: normal;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome', 'Font Awesome 5 Brands';
 }
 
 /* ==== ==== Nav Menu ==== ==== */
@@ -136,7 +136,7 @@ i {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0;
+  padding: 5px 0;
   margin: .75rem;
   font-size: var(--fs-md);
   position: relative;
@@ -153,7 +153,7 @@ i {
 }
 
 .nav-item {
-  padding: 0;
+  padding: 10px;
   text-align: center;
   align-self: center;
 }
@@ -164,13 +164,19 @@ i {
 
 .nav-item a {
   color: var(--light-gray);
-  transition: var(--transition);
+  padding: 10px;
 }
 
 .nav-item a:hover {
   color: var(--green) !important;
-  border-radius: var(--border-radius);
   transform: translateY(-2px);
+  transition: .2s ease-in-out;
+}
+
+.nav-item a:active {
+  color: var(--green);
+  border: 2px dashed var(--green);
+  transition: none;
 }
 
 .align-right {
@@ -181,7 +187,7 @@ i {
 
 /* ==== Header Section ==== */
 .header-content {
-  margin: -12% 0 20% 0;
+  margin: -12% 0 0 0;
 }
 
 .heading-primary {
@@ -227,6 +233,10 @@ i {
   background-color: var(--green-tint);
   color: var(--green);
   transition: var(--transition);
+}
+
+.contact-button {
+  display: inline-block;
 }
 
 .resume-button {
@@ -450,6 +460,10 @@ i {
   text-align: left;
 }
 
+.project-title-sm {
+  /* display: none; */
+}
+
 .description {
   margin: 0 0 1rem -2rem;
   min-width: 120%;
@@ -479,7 +493,7 @@ i {
   text-align: left;
 }
 
-.description h3, .project-links-sm {
+.hidden-lg {
   display: none;
 }
 
@@ -511,10 +525,6 @@ i {
   line-height: 2rem;
   letter-spacing: -0.5px;
   word-spacing: -2px;
-}
-
-.project-btn i {
-  
 }
 
 /* ==== Additional Projects ==== */
@@ -608,10 +618,10 @@ i {
 }
 
 .about-title span {
-  border-bottom: 1px dotted transparent;
   margin: 0 10px;
   color: var(--light-gray);
   font-weight: 600;
+  border-bottom: 1px dotted var(--green);
 }
 
 .about-text p {
@@ -626,7 +636,7 @@ i {
 
 .quote {
   margin-top: 12%;
-  padding: 0 20%;
+  padding: 0 5%;
   display: flex;
 }
 
@@ -654,10 +664,12 @@ i {
 }
 
 .quote-text p {
+  font-size: var(--fs-md);
   text-align: right;
   color: var(--light-green);
   font-style: italic;
   padding-top: 10px;
+  line-height: 1.5rem;
 }
 
 /* ==== ==== Contact ==== ==== */
@@ -700,7 +712,7 @@ i {
 }
 
 /* ==== ==== Go to top button ==== ==== */
-.go-top-btn .fa {
+.go-top-btn .fas {
   font-size: var(--fs-lg);
   margin-top: .6rem;
   color: var(--light-gray);
@@ -742,12 +754,13 @@ i {
 
 .contact-side i {
   font-size: var(--fs-lg);
-  padding: 8px;
+  padding: 12px 9px;
   color: var(--light-gray);
   border-radius: 50%;
 }
 
 .contact-side i:hover {
+  color: var(--main-white);
   box-shadow: 0px 0px 3px var(--green);
   transition: var(--transition);
 }
@@ -931,9 +944,8 @@ i {
 }
 
 /* ==== ==== Footer ==== ==== */
-footer {
-  min-height: 100px;
-  margin-top: 30%;
+#footer {
+  padding-bottom: 40px;
 }
 
 .footer-col p {
@@ -952,7 +964,7 @@ footer {
 }
 
 /* --------- */
-@media screen and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
 
   /* ==== Top navbar ==== */
   .header-background {
@@ -964,9 +976,17 @@ footer {
     opacity: 1;
   }
 
-  /* ==== Main Header ==== */
+  /* ==== Header Section ==== */
   .heading-primary {
     letter-spacing: -1px;
+  }
+
+  .underline {
+    justify-content: center;
+  }
+
+  .underline::before, .underline::after, .underline-center::before, .underline-center::after {
+    width: 5%;
   }
 
   /* ==== Contact side elements ==== */
@@ -987,21 +1007,196 @@ footer {
     height: 2rem;
     bottom: 2%;
     right: 2%;
-    border: 1px solid var(--purple);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: var(--main-black);
+    z-index: 1000;
+  }
+
+  /* ==== Selected Projects ==== */
+  .project-row {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .img-container {
+    position: relative;
+    height: 200px;
+    width: auto;
+    margin: 0;
+    border-radius: var(--border-radius);
+    display: none;
+    padding: 0;
+  }
+
+  .overlay-sm {
+    opacity: .9;
+    mix-blend-mode: hue;
+  }
+
+  .project-wrapper {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .info-wrapper, .info-wrapper-left {
+    margin-bottom: 10%;
+    background-color: transparent;
+  }
+
+  .project-title, .project-title-right, .project-title-left {
+    display: none;
+  }
+
+  div[class*='bg-img'] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: none;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 8px var(--main-white-tint);
+    transition: none;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .bg-img-1 {
+    background-image: url('/assets/images/buffle-disc-golf.png');
+  }
+
+  .bg-img-2 {
+    background-image: url('/assets/images/high-low-game.png');
+  }
+
+  .bg-img-3 {
+    background-image: url('/assets/images/recipe-app.png');
+  }
+
+  .description {
+    margin: 5% 2%;
+    padding: 6% 0;
+    min-width: 95%;
+    max-width: 95%;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--dark-gray);
+  }
+
+  .description h3, .description p, .hidden-lg-links {
+    display: block;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .description h3 {
+    font-weight: 600;
+    color: var(--main-white);
+  }
+
+  .description p {
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--main-white);
+  }
+
+  .hidden-lg {
+    display: flex;
+  }
+
+  .hidden-lg span {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    color: var(--green);
+    margin-right: 20px;
+  }
+
+  .hidden-lg a {
+    display: flex;
+  }
+
+  .hidden-lg-links {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hidden-lg-links a {
+    padding: 1px 8px;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    color: var(--main-white);
+  }
+
+  .hidden-lg-links a:active {
+    background-color: var(--green-tint);
+    color: var(--green);
     transition: var(--transition);
+  }
+
+  .project-links {
+    display: none;
+  }
+
+  /* ==== Additional Projects */
+  .project-inner-img img {
+    filter: none;
+  }
+
+  .project-inner h5 {
+    color: var(--main-white);
+  }
+
+  /* ==== Contact ==== */
+  .media-icons {
+    display: block;
+  }
+
+  .media-icons i {
+    color: var(--main-white);
+  }
+
+  .media-icons i:active {
+    border: 2px dashed var(--green);
+  }
+
+  /* ==== Additional Projects ==== */
+  #additional-projects {
+    min-width: 100%;
+max-width: 100%;
+  }
+
+  /* ==== About ==== */
+  .quote {
+    padding: 0;
+  }
+
+  .quote-text h6 {
+    font-size: var(--fs-md);
+  }
+
+  .quote-text p {
+    font-size: var(--fs-sm);
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+/* ---------  */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
 
-  /* ==== Header nav ==== */
+  /* ==== Top navbar ==== */
   .header-background {
-    margin: 5% -25%;
+    margin: 5% -20%;
     transition: none;
+  }
+
+  .logo {
+    opacity: 1;
   }
 
   /* ==== Contact side elements ==== */
@@ -1043,50 +1238,98 @@ footer {
     display: none;
   }
 
-  .bg-img-1 {
-    background-image: url('/assets/images/buffle-disc-golf.png');
+  div[class*='bg-img'] {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 650px;
-    filter: grayscale(30%);
+    background-size: cover;
+    filter: none;
     object-fit: cover;
     display: flex;
     align-items: center;
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 8px var(--main-white-tint);
+    transition: none;
+  }
+
+  .bg-img-1 {
+    background-image: url('/assets/images/buffle-disc-golf.png');
+  }
+
+  .bg-img-2 {
+    background-image: url('/assets/images/high-low-game.png');
+  }
+
+  .bg-img-3 {
+    background-image: url('/assets/images/recipe-app.png');
   }
 
   .description {
     margin: 10% 0;
     padding: 8%;
+    min-width: 80%;
     max-width: 90%;
     opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: var(--main-black);
+    background-color: var(--dark-gray);
   }
 
-  .description h3, .description p {
+  .description h3, .description p, .hidden-lg-links {
+    display: block;
     text-align: left;
     padding: 0 1.5rem;
-    text-shadow: 0px 0px 2px #000;
   }
 
   .description h3 {
     font-weight: 600;
+    color: var(--main-white);
   }
 
   .description p {
-    font-weight: 300;
+    font-weight: 400;
     color: var(--main-white);
+  }
+
+  .hidden-lg {
+    display: flex;
+  }
+
+  .hidden-lg span {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    color: var(--green);
+    margin-right: 20px;
+  }
+
+  .hidden-lg a {
+    display: flex;
+  }
+
+  .hidden-lg-links {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hidden-lg-links a {
+    padding: 1px 8px;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    color: var(--main-white);
+  }
+
+  .hidden-lg-links a:active {
+    background-color: var(--green-tint);
+    color: var(--green);
+    transition: var(--transition);
   }
 
   .project-links {
     display: none;
   }
 
-  /* ==== Additional Projects */
+  /* ==== Additional Projects ==== */
   .project-inner-img img {
     filter: none;
   }
@@ -1099,10 +1342,18 @@ footer {
   .media-icons {
     display: block;
   }
+
+  .media-icons i {
+    color: var(--main-white);
+  }
+
+  .media-icons i:active {
+    border: 2px dashed var(--green);
+  }
 }
 
 /* ------------------- */
-/* @media screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .description {
     margin: 10% 0;
     padding: 8%;
@@ -1114,4 +1365,27 @@ footer {
   .project-links-sm {
     display: none;
   }
-} */
+
+  .project-title-sm {
+    display: flex;
+  }
+}
+
+/* ------------------- */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .description {
+    margin: 10% 0;
+    padding: 8%;
+    min-width: 80%;
+    opacity: .95;
+    background-color: var(--main-black);
+  }
+
+  .project-links-sm {
+    display: none;
+  }
+
+  .project-title-sm {
+    display: flex;
+  }
+}
