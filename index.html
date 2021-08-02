@@ -22,7 +22,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- ==== Font Awesome ==== -->
   <script src="https://kit.fontawesome.com/8b6bf7c9c3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- ==== Favicon ==== -->
   <link rel="icon" href="favicon.ico" />
   <!-- ==== Global site tag (gtag.js) - Google Analytics ==== -->
@@ -75,7 +76,6 @@
                 <div class="row m-0 p-0">
                   <div class="col-12 p-0">
                     <div class="section-row my-3">
-                      <!-- <h2 class="section-title fs-5"><i class="fas fa-chevron-left"></i><span>Selected Projects</span><i class="fas fa-chevron-right"></i></h2> -->
                       <h2 class="underline section-title"><span>Selected Projects</span></h2>
                     </div>
                   </div>
@@ -90,7 +90,6 @@
                     <div id="project1" class="d-flex row project-row p-0 mt-1 mb-5">
                       <div class="col-sm-12 col-lg-6 img-container p-0">
                         <img class="gallery" src="/assets/images/buffle-disc-golf.png" alt="Buffle Disc Golf website screenshot">
-                        <div class="overlay"></div>
                       </div>
                       <div class="col-sm-12 col-lg-6 info-wrapper bg-img-1 p-0">
                         <div class="project-title project-title-right">
@@ -98,64 +97,71 @@
                           <p><span>JS</span><span>Bootstrap</span></p>
                         </div>
                         <div class="description">
-                          <h3 class="fs-5">Buffle Disc Golf</h3>
-                          <p>An e-commerce website built for a made-up disc golf store. The primary focus of the project was SEO. It was an excellent learning experience building a website from the ground up, from wireframing to integrating on-page
-                            and off-page SEO tactics to self-teaching Bootstrap.</p>
-                          <div class="project-links-sm">
-                            <a href="projects/buffle-disc-golf/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt gallery-btn"></i>View Live</a>
-                            <a href="https://github.com/cghayes/buffle-disc-golf" target="blank" class="project-btn ms-3"><i class="fa fa-github gallery-btn"></i>View Code</a>
+                          <h3 class="hidden-lg fs-5">Buffle Disc Golf</h3>
+                          <p class="hidden-lg"><span>JS</span><span>Bootstrap</span></p>
+                          <p>An e-commerce website built for a made-up disc golf store. The primary focus of the project was SEO. It was an excellent learning experience building a website from the ground up, from wireframing to integrating on-page and off-page SEO tactics to self-teaching Bootstrap.</p>
+                          <div class="hidden-lg hidden-lg-links">
+                            <a href="pages/buffle-disc-golf/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt fa-sm me-2"></i>View Live</a>
+                            <a href="https://github.com/cghayes/buffle-disc-golf" target="blank" class="project-btn ms-3"><i class="fab fa-github fa-md me-2"></i>View Code</a>
                           </div>
                         </div>
                         <div class="project-links">
-                          <a href="pages/buffle-disc-golf/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt"></i>View Live</a>
-                          <a href="https://github.com/cghayes/buffle-disc-golf" target="blank" class="project-btn ms-3"><i class="fa fa-github"></i>View Code</a>
+                          <a href="pages/buffle-disc-golf/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt fa-sm me-2"></i>View Live</a>
+                          <a href="https://github.com/cghayes/buffle-disc-golf" target="blank" class="project-btn ms-3"><i class="fab fa-github fa-md me-2"></i>View Code</a>
                         </div>
-                        <div class="overlay-sm"></div>
                       </div>
                     </div>
                     <!-- End Project 1 -->
 
                     <!-- Project 2 -->
                     <div id="project2" class="d-flex row project-row p-0 mt-1 mb-5">
-                      <div class="col-sm-12 col-lg-6 info-wrapper-left">
+                      <div class="col-sm-12 col-lg-6 info-wrapper-left bg-img-2 p-0">
                         <div class="project-title project-title-left">
                           <h3>High Low Game</h3>
                           <p><span>React</span><span>Node.js</span></p>
                         </div>
-                        <div class="description description-left p-0">
-                          <p>A game built with React in which the user guesses a randomly generated number between 0 and 999. Each game has a 60 second timer, provides feedback on the user's guess, and keeps track of the number of wins and losses.
-                          </p>
+                        <div class="description description-left">
+                          <h3 class="hidden-lg fs-5">High Low Game</h3>
+                          <p class="hidden-lg"><span>React</span><span>Node.js</span></p>
+                          <p>A game built with React in which the user guesses a randomly generated number between 0 and 999. Each game has a 60 second timer, provides feedback on the user's guess, and keeps track of the number of wins and losses.</p>
+                          <div class="hidden-lg hidden-lg-links">
+                            <a href="pages/high-low-game/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt fa-sm me-2"></i>View Live</a>
+                            <a href="https://github.com/cghayes/high-low-game" target="blank" class="project-btn ms-3"><i class="fab fa-github fa-md me-2"></i>View Code</a>
+                          </div>
                         </div>
                         <div class="project-links">
-                          <a href="pages/high-low-game/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt gallery-btn"></i>View Live</a>
-                          <a href="https://github.com/cghayes/high-low-game" target="blank" class="project-btn ms-3"><i class="fa fa-github gallery-btn"></i>View Code</a>
+                          <a href="pages/high-low-game/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt fa-sm me-2"></i>View Live</a>
+                          <a href="https://github.com/cghayes/high-low-game" target="blank" class="project-btn ms-3"><i class="fab fa-github fa-md me-2"></i>View Code</a>
                         </div>
                       </div>
-                      <div class="col-sm-12 col-lg-6 img-container">
+                      <div class="col-sm-12 col-lg-6 img-container p-0">
                         <img class="gallery" src="/assets/images/high-low-game.png" alt="High/low guessing game screenshot">
-                        <div class="overlay"></div>
                       </div>
                     </div>
                     <!-- End Project 2 -->
 
                     <!-- Project 3 -->
                     <div id="project3" class="d-flex row project-row p-0 mt-1">
-                      <div class="col-sm-12 col-lg-6 img-container">
+                      <div class="col-sm-12 col-lg-6 img-container p-0">
                         <img class="gallery" src="/assets/images/recipe-app.png" alt="Outdoor activities SPA screenshot">
-                        <div class="overlay"></div>
                       </div>
-                      <div class="col-sm-12 col-lg-6 info-wrapper p-0">
+                      <div class="col-sm-12 col-lg-6 info-wrapper bg-img-3 p-0">
                         <div class="project-title project-title-right">
                           <h3>Recipe Search App</h3>
                           <p><span>React</span><span>Node.js</span></p>
                         </div>
                         <div class="description">
-                          <p>A recipe app built with React using the <a href="https://developer.edamam.com/" target="blank">Edamam recipe search API</a>. This was my first learning experience working with pulling data from an API thanks to <a
-                              href="https://youtu.be/U9T6YkEDkMo" target="blank">this tutorial</a> by Dev Ed.</p>
+                          <h3 class="hidden-lg fs-5">Recipe Search App</h3>
+                          <p class="hidden-lg"><span>React</span><span>Node.js</span></p>
+                          <p>A recipe app built with React using the <a href="https://developer.edamam.com/" target="blank">Edamam recipe search API</a>. This was my first learning experience working with pulling data from an API thanks to <a href="https://youtu.be/U9T6YkEDkMo" target="blank">this tutorial</a> by Dev Ed.</p>
+                          <div class="hidden-lg hidden-lg-links">
+                            <a href="pages/buffle-disc-golf/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt fa-sm me-2"></i>View Live</a>
+                            <a href="https://github.com/cghayes/buffle-disc-golf" target="blank" class="project-btn ms-3"><i class="fab fa-github fa-md me-2"></i>View Code</a>
+                          </div>
                         </div>
                         <div class="project-links">
-                          <a href="pages/recipe-app/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt gallery-btn"></i>View Live</a>
-                          <a href="https://github.com/cghayes/recipe-app" target="blank" class="project-btn ms-3"><i class="fa fa-github gallery-btn"></i>View Code</a>
+                          <a href="pages/recipe-app/index.html" target="blank" class="project-btn"><i class="fas fa-external-link-alt fa-sm me-2"></i>View Live</a>
+                          <a href="https://github.com/cghayes/recipe-app" target="blank" class="project-btn ms-3"><i class="fab fa-github fa-md me-2"></i>View Code</a>
                         </div>
                       </div>
                     </div>
@@ -175,7 +181,6 @@
                 <div class="row m-0 p-0">
                   <div class="col-12 p-0">
                     <div class="section-row my-3">
-                      <!-- <h2 class="section-title fs-5"><i class="fas fa-chevron-left"></i><span>Additional Projects</span><i class="fas fa-chevron-right"></i></h2> -->
                       <h2 class="underline section-title"><span>Additional Projects</span></h2>
                     </div>
                   </div>
@@ -183,7 +188,7 @@
                 <!-- End Header row -->
 
                 <!-- Content row -->
-                <div class="row projects-grid gx-3 p-0">
+                <div class="row projects-grid p-0">
 
                   <!-- Outdoor Activities SPA -->
                   <div class="project-wrapper col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
@@ -197,8 +202,8 @@
                         <p>A simple single page web app about different activities, built with React as I learned to use React Router.</p>
                       </div>
                       <div class="mx-0 my-3 p-0">
-                        <a class="me-3" href="projects/react-spa/index.html" target="blank" title="External Link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/cghayes/itwp1150-spa" target="blank" title="GitHub Repo"><i class="fa fa-github"></i></a>
+                        <a class="me-3" href="projects/react-spa/index.html" target="blank" title="External Link"><i class="fas fa-external-link-alt fa-md"></i></a>
+                        <a href="https://github.com/cghayes/itwp1150-spa" target="blank" title="GitHub Repo"><i class="fab fa-github fa-md"></i></a>
                       </div>
                     </div>
                   </div>
@@ -215,8 +220,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </div>
                       <div class="mx-0 my-3 p-0">
-                        <a class="me-3" href="projects/lets-bike/index.html" target="blank" title="External Link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/cghayes/lets-bike" target="blank" title="GitHub Repo"><i class="fa fa-github"></i></a>
+                        <a class="me-3" href="projects/lets-bike/index.html" target="blank" title="External Link"><i class="fas fa-external-link-alt fa-md"></i></a>
+                        <a href="https://github.com/cghayes/lets-bike" target="blank" title="GitHub Repo"><i class="fab fa-github fa-md"></i></a>
                       </div>
                     </div>
                   </div>
@@ -233,8 +238,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </div>
                       <div class="mx-0 my-3 p-0">
-                        <a class="me-3" href="projects/php-registration/register.php" target="blank" title="External Link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/cghayes/dog-registration" target="blank" title="GitHub Repo"><i class="fa fa-github"></i></a>
+                        <a class="me-3" href="projects/php-registration/register.php" target="blank" title="External Link"><i class="fas fa-external-link-alt fa-md"></i></a>
+                        <a href="https://github.com/cghayes/dog-registration" target="blank" title="GitHub Repo"><i class="fab fa-github fa-md"></i></a>
                       </div>
                     </div>
                   </div>
@@ -251,8 +256,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </div>
                       <div class="mx-0 my-3 p-0">
-                        <a class="me-3" href="projects/php-calculator/calculator.php" target="blank" title="External Link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/cghayes/php-calculator" target="blank" title="GitHub Repo"><i class="fa fa-github"></i></a>
+                        <a class="me-3" href="projects/php-calculator/calculator.php" target="blank" title="External Link"><i class="fas fa-external-link-alt fa-md"></i></a>
+                        <a href="https://github.com/cghayes/php-calculator" target="blank" title="GitHub Repo"><i class="fab fa-github fa-md"></i></a>
                       </div>
                     </div>
                   </div>
@@ -269,7 +274,7 @@
                 <div class="row m-0 p-0">
                   <div class="col-sm-12 col-lg-6 offset-lg-3 p-0">
                     <div class="section-row my-3">
-                      <h2 class="fs-4 about-title underline-center"><span>About Me</span></h2>
+                      <h2 class="fs-4 about-title"><span>About Me</span></h2>
                     </div>
                   </div>
                 </div>
@@ -293,11 +298,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 offset-lg-3 px-3 quote">
-                  <i class="fas fa-quote-left"></i>
+                <div class="col-sm-12 col-lg-6 offset-lg-3 quote">
+                  <i class="fas fa-quote-left me-2"></i>
                   <div class="quote-text">
-                    <h6 class="fs-6">Always go a little further into the water than you feel you’re capable of being in. Go a little bit out of your depth.</h6>
-                    <h6 class="fs-6 pt-3">And when you don’t feel that your feet are quite touching the bottom, you’re just about in the right place to do something exciting.</h6>
+                    <h6>Always go a little further into the water than you feel you’re capable of being in. Go a little bit out of your depth.</h6>
+                    <h6 class="pt-3">And when you don’t feel that your feet are quite touching the bottom, you’re just about in the right place to do something exciting.</h6>
                     <p>- David Bowie</p>
                   </div>
                 </div>
@@ -314,7 +319,7 @@
                 <div class="row m-0 p-0">
                   <div class="col-sm-12 col-lg-6 offset-lg-3 p-0">
                     <div class="section-row my-3 d-flex justify-content-center">
-                      <h2 class="fs-3"><span class="contact-title">Get in Touch</span></h2>
+                      <h2 class="fs-2"><span class="contact-title">Get in Touch</span></h2>
                     </div>
                   </div>
                 </div>
@@ -367,8 +372,8 @@
 
     <!-- Go to top button -->
     <div id="go-top">
-      <a href="#" class="go-top-btn">
-        <i class="fa fa-arrow-up"></i>
+      <a href="#nav" class="go-top-btn">
+        <i class="fas fa-arrow-up"></i>
       </a>
     </div>
 
