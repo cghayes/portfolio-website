@@ -33,7 +33,7 @@ class Header extends HTMLElement {
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link resume-button" id="resume-link" href="#contact">Resume</a>
+                  <a class="nav-link resume-button" id="resume-link" href="/assets/files/Hayes_Resume_2021.pdf">Resume</a>
                 </li>
               </ul>
             </div>
