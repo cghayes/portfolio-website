@@ -11,7 +11,7 @@ html {
 }
 
 body {
-background: #ADD8E6;
+  background: #bef8fa;
 }
 
 button {
@@ -126,7 +126,7 @@ select::-ms-expand {
 	color: #474544;
 }
 
-:-moz-placeholder { 
+:-moz-placeholder {
 	color: #474544;
 	opacity: 2;
 }
@@ -176,11 +176,11 @@ select::-ms-expand {
   h1 {
     font-size: 26px;
   }
-  
+
   .underline {
     width: 68px;
   }
-  
+
   .form_button {
     padding: 15px 25px;
   }
@@ -190,16 +190,16 @@ select::-ms-expand {
   h1 {
     font-size: 18px;
   }
-  
+
   .icon {
     height: 35px;
     width: 35px;
   }
-  
+
   .underline {
     width: 53px;
   }
-  
+
   input[type='text'] {
     font-size: 0.875em;
   }
@@ -216,7 +216,7 @@ div.submit {
     text-align: center;
 }
 
-/* shout out to CodePen author */
+/* shout out to CodePen */
   #shout_out {
     font-style: italic;
     font-size: 9px;
@@ -229,10 +229,6 @@ p.center {
 }
 h2.center {
   text-align: center;
-}
-
-footer {
-  padding: 5px;
 }
 
 /* error message */
@@ -254,7 +250,7 @@ p {
 
 label {
   margin-bottom: 10px;
-  padding: 10px;
+  padding:  10px 10px 10px 0;
 }
 
 .success {
@@ -267,12 +263,12 @@ label {
   text-align: left;
 }
 
-/* makes image responsive */
+/* make image responsive */
 .responsive {
   max-width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 20px 20px 50px #333;
+  box-shadow:20px 20px 50px #333;
 }
