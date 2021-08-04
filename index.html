@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Calley Hayes web developer portfolio website.">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="color-scheme" content="dark light">
   <meta name="author" content="Calley Hayes">
   <title>Calley Hayes | Web Developer</title>
   <!-- ==== Canonical ==== -->
@@ -202,8 +203,8 @@
                         <p>A simple single page web app about different outdoor activities built with React. Used CLI to create the project and npm to install React Router and create the production build.</p>
                       </div>
                       <div class="mx-0 my-3 p-0">
-                        <a class="me-3" href="pages/react-spa/index.html" target="blank" title="External Link"><i class="fas fa-external-link-alt fa-md"></i></a>
-                        <a href="https://github.com/cghayes/itwp1150-spa" target="blank" title="GitHub Repo"><i class="fab fa-github fa-md"></i></a>
+                        <a class="me-3" href="pages/react-spa/index.html" target="blank" title="External Link"><i class="fas fa-external-link-alt fa-lg"></i></a>
+                        <a href="https://github.com/cghayes/itwp1150-spa" target="blank" title="GitHub Repo"><i class="fab fa-github fa-lg"></i></a>
                       </div>
                     </div>
                   </div>
@@ -283,12 +284,13 @@
                 <!-- Content row -->
                 <div class="row p-0 gx-5 about-text">
                   <div class="col-sm-12 col-lg-8 col-xl-6 offset-lg-2 offset-xl-3 px-3">
-                    <p><span class="first-words">I have always had</span> a passion for modern technology, problem solving, and creating things.</p>
-                    <p><span class="first-words">My interest in web</span> development started around 2006 when I began digging into and editing the code of custom LiveJournal themes. At the time, I had no idea my hours of tinkering with that HTML
+                    <p>I have always had a passion for modern technology, problem solving, and creating things.</p>
+                    <p>My interest in web development started around 2006 when I began digging into and editing the code of custom LiveJournal themes. At the time, I had no idea my hours of tinkering with that HTML
                       and CSS was planting the seed for
                       what I wanted to do as a life-long profession.</p>
-                    <p><span class="first-words">Fast forward to today:</span> I have a bachelor's degree in computer art & animation and an associate's degree in website programming. I am driven by constantly learning and challenging myself. It's important to me to see the impact of my work. I want to take on projects that are user-centric and clearly benefit people.</p>
-                    <p><span class="first-words">These days, my time</span> is largely spent practicing my skills in JavaScript and learning additional languages, libraries, and frameworks as often as I can. Right now, Vue.js and Sass have worked
+                    <p>Fast forward to today: I have a bachelor's degree in computer art & animation and an associate's degree in website programming. I am driven by constantly learning and challenging myself. It's
+                      important to me to see the impact of my work. I want to take on projects that are user-centric and clearly benefit people.</p>
+                    <p>These days, my time is largely spent practicing my skills in JavaScript and learning additional languages, libraries, and frameworks as often as I can. Right now, Vue.js and Sass have worked
                       themselves into my daily learning routine.
                     </p>
                   </div>
@@ -365,9 +367,18 @@
       </div>
     </div>
 
+
+    <div class="toggle-container">
+    <a class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+      <i class="fas fa-sun"></i>
+    </a>
+    <a class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+      <i class="fas fa-moon"></i>
+    </a>
+
     <!-- Go to top button -->
     <div id="go-top">
-      <a href="#nav" class="go-top-btn">
+      <a href="#nav" class="go-top-btn" title="Go to top">
         <i class="fas fa-arrow-up"></i>
       </a>
     </div>
@@ -380,7 +391,7 @@
 
   <!-- Scripts -->
   <script src="assets/js/header_footer.js"></script>
-  <script src="assets/bs5/js/bootstrap.js"></script>
+  <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
