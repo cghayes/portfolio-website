@@ -1,4 +1,4 @@
-:root {
+:root, :root.light {
   --border-radius: 4px;
   --transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   --font-sans: 'Inter', 'Helvetica', 'Tahoma', sans-serif;
@@ -10,10 +10,7 @@
   --fs-lg: 1.5rem;
   --fs-xl: 2rem;
   --fs-xxl: 4rem;
-}
-
-:root.dark {
-  /* ---- Dark theme colors */
+  /* IMPORTANT: "Light" and "Dark" colors are SWITCHED/BACKWARDS in order to force dark to be the default mode */
   --background: #14141a;
   --background-secondary: #282830;
   --text-primary: #f7fbfb;
@@ -28,7 +25,7 @@
   --shadow: #000;
 }
 
-:root.light {
+:root.dark {
   /* ---- Light theme colors */
   --background: #f7fbfb;
   --background-secondary: #ebecf4;
